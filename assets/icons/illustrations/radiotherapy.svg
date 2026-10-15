@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" fill="none" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Radiation therapy illustration">
+  <path d="M110 20h110a20 20 0 0 1 20 20v70h-40V60h-90z" fill="#fff" stroke="#123B5D" stroke-width="4"/>
+  <rect x="100" y="56" width="40" height="40" rx="8" fill="#F4F7FA" stroke="#176B87" stroke-width="4"/>
+  <path d="M120 96l-14 46M120 96l14 46" stroke="#C82032" stroke-width="3" stroke-dasharray="5 6"/>
+  <path d="M40 146h210v10H40z" fill="#176B87" stroke="#176B87" stroke-width="2"/>
+  <path d="M240 110v80M200 190h80" stroke="#123B5D" stroke-width="4"/>
+  <path d="M30 200h260" stroke="#c9d6e2" stroke-width="4"/>
+</svg>

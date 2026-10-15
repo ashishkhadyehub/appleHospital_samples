@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Website Redesign — Design Concepts | Apple Saraswati Multispeciality Hospital</title>
+  <meta name="description" content="Two website design concepts for Apple Saraswati Multispeciality Hospital, Kolhapur — prototype for client review.">
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+  <style>
+    @font-face { font-family: "Manrope"; src: url("assets/vendor/fonts/manrope-latin-600-normal.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+    @font-face { font-family: "Manrope"; src: url("assets/vendor/fonts/manrope-latin-800-normal.woff2") format("woff2"); font-weight: 800; font-display: swap; }
+    @font-face { font-family: "Inter"; src: url("assets/vendor/fonts/inter-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+    @font-face { font-family: "Inter"; src: url("assets/vendor/fonts/inter-latin-600-normal.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+    @font-face { font-family: "Fraunces"; src: url("assets/vendor/fonts/fraunces-latin-500-normal.woff2") format("woff2"); font-weight: 500; font-display: swap; }
+
+    :root { --navy: #123B5D; --ink: #0B2740; --blue: #176B87; --red: #C82032; --bg: #F4F7FA; --line: #DCE4EC; --text: #263442; --muted: #5B6B7B; }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body { margin: 0; font-family: "Inter", system-ui, sans-serif; color: var(--text); background: var(--bg); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid #F2A900; outline-offset: 3px; border-radius: 6px; }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    header.intro { background: #fff; border-bottom: 1px solid var(--line); position: relative; overflow: hidden; }
+    header.intro::after { content: ""; position: absolute; right: -140px; top: -140px; width: 460px; height: 460px; border-radius: 50%; background: radial-gradient(closest-side, rgba(23,107,135,.10), transparent); }
+    .brand-row { display: flex; align-items: center; gap: 18px; padding: 36px 0 0; }
+    .brand-row img { height: 84px; width: auto; display: block; }
+    .brand-row .name { font-family: "Manrope", sans-serif; font-weight: 800; color: var(--navy); font-size: 1.3rem; line-height: 1.2; letter-spacing: -.01em; }
+    .brand-row .tag { color: var(--blue); font-weight: 600; font-size: .92rem; margin-top: 4px; }
+    .hero-copy { padding: 44px 0 56px; max-width: 760px; position: relative; z-index: 1; }
+    .eyebrow { display: inline-flex; gap: 8px; align-items: center; font-size: .78rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--red); }
+    .eyebrow::before { content: ""; width: 24px; height: 2px; background: var(--red); }
+    h1 { font-family: "Manrope", sans-serif; font-weight: 800; color: var(--navy); font-size: clamp(2.1rem, 5vw, 3.4rem); line-height: 1.08; letter-spacing: -.025em; margin: 14px 0 16px; }
+    .hero-copy p { color: var(--muted); font-size: 1.1rem; margin: 0; }
+
+    main { padding: 56px 0 72px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+    .concept { background: #fff; border: 1px solid var(--line); border-radius: 22px; overflow: hidden; display: flex; flex-direction: column; transition: box-shadow .25s, transform .25s; }
+    .concept:hover { box-shadow: 0 28px 60px -32px rgba(18,59,93,.45); transform: translateY(-4px); }
+    .shot { position: relative; background: #E9EEF3; padding: 18px 18px 0; }
+    .shot .browser { background: #fff; border-radius: 12px 12px 0 0; overflow: hidden; box-shadow: 0 -2px 20px -8px rgba(18,59,93,.25); }
+    .shot .bar { display: flex; gap: 6px; padding: 9px 12px; background: #F1F4F7; border-bottom: 1px solid var(--line); }
+    .shot .bar span { width: 9px; height: 9px; border-radius: 50%; background: #CFD8E1; }
+    .shot img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; }
+    .concept.c2 .shot { background: #F3ECE2; }
+    .badge-num { position: absolute; top: 30px; left: 30px; background: var(--navy); color: #fff; font-family: "Manrope", sans-serif; font-weight: 800; font-size: .8rem; letter-spacing: .08em; padding: 6px 12px; border-radius: 999px; }
+    .concept.c2 .badge-num { background: var(--red); }
+    .body { padding: 28px 30px 30px; display: flex; flex-direction: column; flex: 1; }
+    .body h2 { margin: 0 0 6px; font-family: "Manrope", sans-serif; font-weight: 800; color: var(--navy); font-size: 1.5rem; letter-spacing: -.015em; }
+    .concept.c2 .body h2 { font-family: "Fraunces", Georgia, serif; font-weight: 500; font-size: 1.65rem; color: #0E2F44; }
+    .body .sub { color: var(--muted); margin: 0 0 18px; }
+    .body ul { list-style: none; padding: 0; margin: 0 0 24px; display: grid; gap: 8px; flex: 1; }
+    .body li { display: flex; gap: 10px; font-size: .95rem; }
+    .body li i { color: var(--blue); margin-top: 1px; }
+    .concept.c2 .body li i { color: #1F7A8C; }
+    .highlight { display: flex; gap: 10px; align-items: flex-start; background: #FFF6DF; color: #6B5000; border-radius: 12px; padding: 10px 14px; font-size: .88rem; margin-bottom: 22px; }
+    .concept.c1 .highlight { background: #E8F2F6; color: #134F64; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none; font-weight: 600; font-size: 1.02rem; padding: 15px 22px; border-radius: 12px; transition: background .2s, box-shadow .2s; }
+    .btn-1 { background: var(--navy); color: #fff; }
+    .btn-1:hover { background: var(--ink); box-shadow: 0 12px 24px -12px rgba(18,59,93,.8); }
+    .btn-2 { background: var(--red); color: #fff; border-radius: 999px; }
+    .btn-2:hover { background: #A51627; box-shadow: 0 12px 24px -12px rgba(200,32,50,.8); }
+    .pages { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 16px; font-size: .88rem; }
+    .pages a { color: var(--blue); text-decoration: none; font-weight: 600; }
+    .pages a:hover { text-decoration: underline; }
+
+    .notes { margin-top: 44px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .note { background: #fff; border: 1px solid var(--line); border-radius: 16px; padding: 20px 22px; font-size: .92rem; color: var(--muted); }
+    .note strong { display: flex; gap: 8px; align-items: center; color: var(--navy); font-family: "Manrope", sans-serif; margin-bottom: 6px; font-size: .98rem; }
+    .note strong i { color: var(--red); }
+
+    footer { background: var(--ink); color: #A9BBCC; font-size: .88rem; padding: 32px 0; }
+    footer .wrap { display: flex; flex-wrap: wrap; gap: 20px 40px; justify-content: space-between; }
+    footer a { color: #fff; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    footer .col strong { color: #fff; display: block; margin-bottom: 4px; }
+
+    @media (max-width: 900px) { .grid, .notes { grid-template-columns: 1fr; } }
+    @media (max-width: 520px) {
+      .wrap { padding: 0 16px; }
+      .brand-row img { height: 64px; }
+      .brand-row .name { font-size: 1.1rem; }
+      .body { padding: 22px 20px 24px; }
+      .btn { width: 100%; }
+      .badge-num { top: 26px; left: 26px; }
+    }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+  </style>
+</head>
+<body>
+  <header class="intro">
+    <div class="wrap">
+      <div class="brand-row">
+        <img src="assets/icons/apple-logo-mark.png" alt="Apple Hospitals logo" width="259" height="449">
+        <div>
+          <div class="name">Apple Saraswati Multispeciality Hospital</div>
+          <div class="tag">NABH Accredited Multispeciality Hospital in Kolhapur</div>
+        </div>
+      </div>
+      <div class="hero-copy">
+        <span class="eyebrow">Client presentation</span>
+        <h1>Website Redesign — Design Concepts</h1>
+        <p>Two distinct design directions for the new Apple Hospitals website, covering Apple Saraswati Multispeciality Hospital, Apple Cancer Institute and Apple Diagnostics. Each concept includes a homepage, a Find a Doctor page and a Diagnostics &amp; Health Packages page, and works on desktop, tablet and mobile.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="grid">
+        <article class="concept c1">
+          <div class="shot">
+            <span class="badge-num">SAMPLE 1</span>
+            <div class="browser"><div class="bar" aria-hidden="true"><span></span><span></span><span></span></div>
+              <img src="assets/images/previews/option-1.jpg" alt="Preview of design concept 1 homepage" width="1440" height="900"></div>
+          </div>
+          <div class="body">
+            <h2>Premium Healthcare Corporate</h2>
+            <p class="sub">Structured, institutional and trustworthy — inspired by premium hospital brands.</p>
+            <ul>
+              <li><i class="bi bi-check2-circle" aria-hidden="true"></i>Clean white layout with deep navy, healthcare blue and controlled red accents</li>
+              <li><i class="bi bi-check2-circle" aria-hidden="true"></i>Prominent doctor search panel and clear department grid</li>
+              <li><i class="bi bi-check2-circle" aria-hidden="true"></i>Professional doctor cards, packages and a dedicated Cancer Institute section</li>
+              <li><i class="bi bi-check2-circle" aria-hidden="true"></i>Single, strong "Book Appointment" action ready for a booking system or third-party link</li>
+            </ul>
+            <div class="highlight"><i class="bi bi-info-circle" aria-hidden="true"></i><span>No embedded booking form — the appointment button shows where a future booking feature will connect.</span></div>
+            <a class="btn btn-1" href="option-1/index.html">View Sample 1 <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+            <div class="pages"><span>Pages:</span><a href="option-1/index.html">Home</a><a href="option-1/doctors.html">Find a Doctor</a><a href="option-1/diagnostics.html">Diagnostics &amp; Packages</a></div>
+          </div>
+        </article>
+
+        <article class="concept c2">
+          <div class="shot">
+            <span class="badge-num">SAMPLE 2</span>
+            <div class="browser"><div class="bar" aria-hidden="true"><span></span><span></span><span></span></div>
+              <img src="assets/images/previews/option-2.jpg" alt="Preview of design concept 2 homepage with appointment widget" width="1440" height="900"></div>
+          </div>
+          <div class="body">
+            <h2>Modern Patient-Centric Experience</h2>
+            <p class="sub">Immersive, warm and visually engaging — designed around what patients need to do.</p>
+            <ul>
+              <li><i class="bi bi-check2-circle" aria-hidden="true"></i>Full-width hero imagery with a floating navigation bar</li>
+              <li><i class="bi bi-check2-circle" aria-hidden="true"></i><strong>Interactive appointment-booking widget</strong> in the homepage hero</li>
+              <li><i class="bi bi-check2-circle" aria-hidden="true"></i>"How can we help?" shortcuts, doctor carousel and diagnostics showcase</li>
+              <li><i class="bi bi-check2-circle" aria-hidden="true"></i>Mobile action dock for Call, Doctors and Book on phones</li>
+            </ul>
+            <div class="highlight"><i class="bi bi-eye" aria-hidden="true"></i><span>The booking widget is a working front-end demonstration — no data is sent or stored, and no real appointment is created.</span></div>
+            <a class="btn btn-2" href="option-2/index.html">View Sample 2 <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+            <div class="pages"><span>Pages:</span><a href="option-2/index.html">Home</a><a href="option-2/doctors.html">Find a Doctor</a><a href="option-2/diagnostics.html">Diagnostics &amp; Packages</a></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="notes">
+        <div class="note"><strong><i class="bi bi-images" aria-hidden="true"></i>Real hospital photographs</strong>Both concepts use photographs supplied by the hospital. Final approved photography can be dropped in after selection.</div>
+        <div class="note"><strong><i class="bi bi-tag" aria-hidden="true"></i>Demonstration content</strong>Doctor profiles, health packages and news items are clearly labelled placeholders until the hospital supplies verified details.</div>
+        <div class="note"><strong><i class="bi bi-diagram-3" aria-hidden="true"></i>Next phase</strong>After a direction is approved, the full website, CMS and agreed functionality will be developed.</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="col"><strong>Apple Saraswati Multispeciality Hospital</strong>804/2, 805/2, E Ward, Circuit House To Kadamwadi Road, Bhosalewadi, Kolhapur, Maharashtra 416003<br><a href="tel:+912312688888">0231 268 8888</a> · <a href="https://www.instagram.com/apple_saraswati/?hl=en" target="_blank" rel="noopener"><i class="bi bi-instagram" aria-hidden="true"></i> Instagram</a></div>
+      <div class="col"><strong>Apple Hospitals and Research Institute Limited</strong>525/E, Vyapari Peth, E Ward, Shahupuri, Kolhapur, Maharashtra 416001<br><a href="tel:+912312651207">0231 265 1207</a></div>
+    </div>
+  </footer>
+</body>
+</html>

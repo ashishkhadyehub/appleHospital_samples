@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Find a Doctor | Apple Saraswati Multispeciality Hospital, Kolhapur</title>
+  <meta name="description" content="Find a doctor at Apple Saraswati Multispeciality Hospital, Apple Cancer Institute and Apple Diagnostics. Design concept 1 (prototype).">
+  <link rel="icon" type="image/png" href="../assets/icons/favicon.png">
+  <link rel="stylesheet" href="../assets/vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body class="o1">
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- Contact strip -->
+<div class="topbar">
+  <div class="container">
+    <a href="tel:+912312688888"><i class="bi bi-telephone-fill me-1" aria-hidden="true"></i>0231 268 8888</a>
+    <span class="addr d-none d-md-inline"><i class="bi bi-geo-alt-fill me-1" aria-hidden="true"></i>Circuit House To Kadamwadi Road, Bhosalewadi, Kolhapur 416003</span>
+    <a class="d-none d-sm-inline" href="https://www.instagram.com/apple_saraswati/?hl=en" target="_blank" rel="noopener" aria-label="Apple Saraswati on Instagram (opens in new tab)"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+    <a class="back-link" href="../index.html"><i class="bi bi-grid me-1" aria-hidden="true"></i>Back to Design Selection</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="site-header">
+  <nav class="navbar navbar-expand-xl" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" aria-label="Apple Saraswati Multispeciality Hospital — Home">
+        <img src="../assets/icons/apple-saraswati-logo-horizontal.png" alt="Apple Saraswati Multispeciality Hospital" width="266" height="56">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list fs-4" aria-hidden="true"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-xl-0">
+          <li class="nav-item"><a class="nav-link" href="index.html#hospital">Hospital</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#cancer">Cancer Institute</a></li>
+          <li class="nav-item"><a class="nav-link" href="diagnostics.html">Diagnostics</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="doctors.html">Find a Doctor</a></li>
+          <li class="nav-item"><a class="nav-link" href="diagnostics.html#packages">Health Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#news">News &amp; Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        </ul>
+        <button type="button" class="btn btn-brand" data-proto="appointment"><i class="bi bi-calendar2-check me-2" aria-hidden="true"></i>Book Appointment</button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="page-head" aria-labelledby="pageTitle">
+    <div class="container">
+      <nav aria-label="Breadcrumb"><ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Find a Doctor</li>
+      </ol></nav>
+      <h1 id="pageTitle">Find a Doctor</h1>
+      <p>Search our specialists across Apple Saraswati Multispeciality Hospital, Apple Cancer Institute and Apple Diagnostics, then view a profile or request an appointment.</p>
+    </div>
+  </section>
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="demo-banner mb-4"><i class="bi bi-info-circle" aria-hidden="true"></i><span><strong>Demonstration data:</strong> the doctor profiles on this page are placeholders created to show the layout and filtering. They are not Apple Hospitals staff. Real names, photographs, qualifications and OPD timings will be supplied by the hospital.</span></div>
+      <div class="row g-4">
+        <div class="col-lg-3">
+          <form class="filter-panel" id="doctorFilterForm" role="search" aria-label="Filter doctors">
+            <h2>Filter doctors</h2>
+            <label class="form-label fw-semibold small" for="doctorSearch">Doctor name or specialty</label>
+            <div class="input-group">
+              <span class="input-group-text bg-white"><i class="bi bi-search" aria-hidden="true"></i></span>
+              <input class="form-control" type="search" id="doctorSearch" placeholder="Search…" autocomplete="off">
+            </div>
+            <fieldset>
+              <legend class="group-title">Unit / department</legend>
+              <div class="form-check"><input class="form-check-input" type="radio" name="dept" id="deptAll" value="" checked><label class="form-check-label" for="deptAll">All units</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="dept" id="deptHosp" value="Hospital"><label class="form-check-label" for="deptHosp">Apple Saraswati Hospital</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="dept" id="deptCancer" value="Cancer Institute"><label class="form-check-label" for="deptCancer">Apple Cancer Institute</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="dept" id="deptDiag" value="Diagnostics"><label class="form-check-label" for="deptDiag">Apple Diagnostics</label></div>
+            </fieldset>
+            <fieldset>
+              <legend class="group-title">Specialty</legend>
+              <div id="specialtyFilters"></div>
+            </fieldset>
+            <button type="button" class="btn btn-outline-navy w-100 mt-3" id="clearFilters">Clear filters</button>
+          </form>
+        </div>
+        <div class="col-lg-9">
+          <div class="result-bar">
+            <p class="mb-0 fw-semibold text-body" id="resultCount" aria-live="polite"></p>
+            <button type="button" class="btn btn-brand btn-sm" data-proto="appointment"><i class="bi bi-calendar2-check me-1" aria-hidden="true"></i>Book Appointment</button>
+          </div>
+          <div class="row g-4" id="doctorGrid"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-sm pt-0">
+    <div class="container">
+      <div class="cta-band">
+        <div>
+          <h2>Not sure which specialist you need?</h2>
+          <p>Call the hospital and our team will guide you to the right department.</p>
+        </div>
+        <a class="btn btn-light btn-lg fw-semibold" href="tel:+912312688888"><i class="bi bi-telephone me-2" aria-hidden="true"></i>0231 268 8888</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4 g-lg-5">
+      <div class="col-lg-4">
+        <a href="index.html" class="footer-logo" aria-label="Apple Saraswati Multispeciality Hospital — Home"><img src="../assets/icons/apple-saraswati-logo-horizontal.png" alt="Apple Saraswati Multispeciality Hospital" width="266" height="56"></a>
+        <p class="mt-3 mb-3">NABH Accredited Multispeciality Hospital in Kolhapur.</p>
+        <div class="social"><a href="https://www.instagram.com/apple_saraswati/?hl=en" target="_blank" rel="noopener" aria-label="Instagram (opens in new tab)"><i class="bi bi-instagram" aria-hidden="true"></i></a></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <h2>Quick links</h2>
+        <ul>
+          <li><a href="doctors.html">Find a Doctor</a></li>
+          <li><a href="diagnostics.html#packages">Health Packages</a></li>
+          <li><a href="index.html#news">News &amp; Events</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="../index.html">Design Selection</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-4 col-lg-2">
+        <h2>Our units</h2>
+        <ul>
+          <li><a href="index.html#hospital">Apple Saraswati Hospital</a></li>
+          <li><a href="index.html#cancer">Apple Cancer Institute</a></li>
+          <li><a href="diagnostics.html">Apple Diagnostics</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4 col-lg-4">
+        <h2>Hospital</h2>
+        <address class="mb-2">804/2, 805/2, E Ward, Circuit House To Kadamwadi Road, Bhosalewadi, Kolhapur, Maharashtra 416003</address>
+        <p class="mb-4"><a href="tel:+912312688888"><i class="bi bi-telephone me-2" aria-hidden="true"></i>0231 268 8888</a></p>
+        <div class="corp-block">
+          <h2 class="mb-2">Corporate office</h2>
+          <p class="mb-1 text-white">Apple Hospitals and Research Institute Limited</p>
+          <address class="mb-1">525/E, Vyapari Peth, E Ward, Shahupuri, Kolhapur, Maharashtra 416001</address>
+          <a href="tel:+912312651207">0231 265 1207</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Apple Hospitals and Research Institute Limited. All rights reserved.</span>
+      <span>Design concept 1 · Prototype for review</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Mobile call bar -->
+<div class="mobile-callbar">
+  <a class="btn btn-outline-navy" href="tel:+912312688888"><i class="bi bi-telephone me-1" aria-hidden="true"></i>Call</a>
+  <a class="btn btn-outline-navy" href="doctors.html"><i class="bi bi-search me-1" aria-hidden="true"></i>Doctors</a>
+  <button type="button" class="btn btn-brand" data-proto="appointment"><i class="bi bi-calendar2-check me-1" aria-hidden="true"></i>Book</button>
+</div>
+
+<!-- Prototype modal -->
+<div class="modal fade" id="protoModal" tabindex="-1" aria-labelledby="protoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title h5" id="protoModalLabel">Prototype</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="demo-banner mb-3"><i class="bi bi-info-circle" aria-hidden="true"></i><span>Design prototype — no data is sent or stored.</span></div>
+        <div id="protoModalBody"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/site-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

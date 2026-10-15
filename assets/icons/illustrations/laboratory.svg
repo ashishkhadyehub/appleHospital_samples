@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" fill="none" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Pathology laboratory illustration">
+  <path d="M130 30h40M140 30v56l-44 86a16 16 0 0 0 14 24h80a16 16 0 0 0 14-24l-44-86V30" fill="#fff" stroke="#123B5D" stroke-width="4"/>
+  <path d="M112 140h96l14 30a12 12 0 0 1-10 18h-104a12 12 0 0 1-10-18z" fill="#176B87" opacity=".18" stroke="none"/>
+  <circle cx="140" cy="160" r="6" fill="#176B87" stroke="none"/><circle cx="168" cy="150" r="4" fill="#176B87" stroke="none"/>
+  <rect x="236" y="70" width="22" height="110" rx="11" fill="#fff" stroke="#123B5D" stroke-width="4"/>
+  <path d="M240 130h14v40a7 7 0 0 1-14 0z" fill="#C82032" stroke="none"/>
+  <rect x="58" y="90" width="22" height="90" rx="11" fill="#fff" stroke="#123B5D" stroke-width="4"/>
+  <path d="M62 140h14v30a7 7 0 0 1-14 0z" fill="#176B87" stroke="none"/>
+  <path d="M30 200h260" stroke="#c9d6e2" stroke-width="4"/>
+</svg>

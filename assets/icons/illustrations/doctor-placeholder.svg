@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Doctor photo placeholder">
+  <defs><linearGradient id="coat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e6edf3"/></linearGradient></defs>
+  <path d="M70 400c0-78 52-128 130-128s130 50 130 128z" fill="url(#coat)" stroke="#c9d6e2" stroke-width="2"/>
+  <path d="M160 276l40 62 40-62" fill="#123B5D" opacity=".85"/>
+  <path d="M200 338l-14 62h28z" fill="#176B87"/>
+  <path d="M152 282c-6 40-2 70 16 92" fill="none" stroke="#263442" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="170" cy="380" r="11" fill="none" stroke="#263442" stroke-width="5"/>
+  <path d="M248 282c4 26 4 44 0 60" fill="none" stroke="#263442" stroke-width="5" stroke-linecap="round"/>
+  <rect x="180" y="226" width="40" height="52" rx="16" fill="#d9c2ad"/>
+  <ellipse cx="200" cy="170" rx="66" ry="76" fill="#e3cdb8"/>
+  <path d="M134 162c0-52 30-82 68-82s66 28 66 80c-12-26-36-38-66-38s-56 14-68 40z" fill="#3a4a5a"/>
+  <rect x="236" y="300" width="44" height="10" rx="3" fill="#C82032"/>
+</svg>

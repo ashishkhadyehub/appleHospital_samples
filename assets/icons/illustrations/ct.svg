@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" fill="none" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="CT scanner illustration">
+  <circle cx="150" cy="100" r="80" fill="#fff" stroke="#123B5D" stroke-width="4"/>
+  <circle cx="150" cy="100" r="40" fill="#F4F7FA" stroke="#176B87" stroke-width="4"/>
+  <path d="M150 20a80 80 0 0 1 69 40" stroke="#C82032" stroke-width="6"/>
+  <path d="M60 132h240v10H60z" fill="#176B87" stroke="#176B87" stroke-width="2"/>
+  <path d="M230 142v46" stroke="#123B5D" stroke-width="4"/>
+  <path d="M40 200h260" stroke="#c9d6e2" stroke-width="4"/>
+</svg>

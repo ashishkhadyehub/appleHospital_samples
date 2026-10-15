@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" fill="none" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Ultrasound illustration">
+  <rect x="120" y="16" width="170" height="120" rx="14" fill="#fff" stroke="#123B5D" stroke-width="4"/>
+  <path d="M205 40l-50 80h100z" fill="#F4F7FA" stroke="#176B87" stroke-width="3"/>
+  <ellipse cx="205" cy="96" rx="18" ry="12" stroke="#176B87" stroke-width="3"/>
+  <path d="M205 136v50M170 190h70" stroke="#123B5D" stroke-width="4"/>
+  <path d="M40 70c18-6 34 4 36 22l6 44c2 12-6 22-18 22H52c-12 0-20-10-18-22z" fill="#fff" stroke="#123B5D" stroke-width="4"/>
+  <path d="M58 158c0 30 20 40 62 34" stroke="#176B87" stroke-width="3"/>
+  <path d="M30 60c6-10 18-14 30-12" stroke="#C82032" stroke-width="4"/>
+  <path d="M22 46c10-16 30-22 46-18" stroke="#C82032" stroke-width="3" opacity=".5"/>
+</svg>
